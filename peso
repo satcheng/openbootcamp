@@ -1,0 +1,6 @@
+peso = int(input("Tu peso es:"))
+altura = int(input("Tu altura es:"))
+
+imc = round((2**peso)/(2**altura),2)
+
+print("Tu índice de masa corporal es:", imc)
