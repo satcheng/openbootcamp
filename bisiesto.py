@@ -6,15 +6,15 @@ class extractCaracteristicsOfYears():
 
         if type(year) is not int:
 
-            print("Error 1: El año debe ser tipo entero")
+            print("Error 1: El año debe ser tipo entero.")
 
         elif year < 1900:
 
-            print("Error 2: El año debe ser mayor que 1900")
+            print("Error 2: El año debe ser mayor que 1900.")
 
-        elif year >= 2200:
+        elif year > 2200:
 
-            print("Error 3: El año debe ser menor que 2200")
+            print("Error 3: El año debe ser menor que 2200.")
 
         else:
 
@@ -24,11 +24,11 @@ class extractCaracteristicsOfYears():
 
             if descomposedYearAttributes.tm_yday == 366:
 
-                print("Es año bisiesto")
+                print("Es año bisiesto.")
 
             else:
 
-                print("No es año bisiesto")
+                print("No es año bisiesto.")
 
 yearToAnalyse = int(input("Introduce el año que quieras saber: "))
 
