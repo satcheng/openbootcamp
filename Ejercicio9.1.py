@@ -2,7 +2,7 @@ countries = {"Argentina", "France", "Italy", "Spain", "Argentina"}
 
 countriesSorted = sorted(countries)
 
-mensaje: str = ""
+message: str = ""
 
 i = 0
 
@@ -11,16 +11,19 @@ for n in countriesSorted:
 
     if i < int(len(countriesSorted)-2):
 
-        mensaje += n
-        mensaje += ", "
+        message += n
+        message += ", "
 
     elif i == int(len(countriesSorted)-2):
 
-        mensaje += n
-        mensaje += " and "
+        message += n
+        message += " and "
 
     else:
-        mensaje += n
-        mensaje += "."
+        message += n
+        message += "."
 
     i += 1
+
+print(message)
+
