@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1> Blockbuster</h1>
+
+  <p> Welcome to Video Store</p>
+
+<h2>Dynamic Content</h2>
+
+<p>We have the next info here:</p>
+
+<ul>
+
+  <li><strong>Films:</strong> {{num_films}}</li>
+  <li><strong>Copies:</strong> {{num_instances}}</li>
+  <li><strong>Copies available:</strong> {{disponibles}}</li>
+  <li><strong>Director:</strong> {{num_director}}</li>
+
+</ul>
+
+{% endblock %}

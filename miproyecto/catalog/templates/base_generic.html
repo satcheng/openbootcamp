@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {%bloc title %} <title>Blockbuster</title> {%endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.boostrapcdn.com/boostrap/3.3.7/css/boostrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.boostrapcdn.com/boostrap/3.3.7/js/bootstrap.min.js"></script>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="col-sm-2">
+         {block sidebar %}
+         <ul class="sidebar-nav">
+             <li><a href="{% url 'index' %}">Home</a></li>
+             <li><a href="">All films</a></li>
+             <li><a href="">All directors</a></li>
+         </ul>
+         {% endblock %}
+
+        </div>
+        <div class="col-sm-10 ">
+            {%bloc content %}{%endblock %}
+        </div>
+    </div>
+</body>
+</html>
