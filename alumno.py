@@ -10,4 +10,4 @@ class Alumno():
         
              print("El alumno", Nombre, "ha suspendido.")
 
-Alumno("Paco",9.4)
+Alumno("Paco",9.5)
